@@ -1,0 +1,155 @@
+body {
+  background-color: #dddddd;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+}
+.header-1 {
+  display: grid;
+  grid-column: 1 / 6;
+  grid-row: 1;
+  font-size: 50px;
+  font-weight: 900;
+  color: navy;
+  border-bottom: 2px dashed white;
+}
+.header-2 {
+  display: grid;
+  grid-column: 1 / 6;
+  grid-row: 2;
+  place-items: center;
+  height: 50px;
+  font-size: 25px;
+  font-weight: 900;
+  color: navy;
+  border-bottom: 2px dashed white;
+}
+.main-1 {
+  display: grid;
+  place-items: center;
+  grid-column: 2 / 5;
+  grid-row: 3 / 8;
+  font-size: 20px;
+  color: gray;
+}
+.main-2 {
+  display: grid;
+  place-items: center;
+  grid-column: 1 / 6;
+  grid-row: 8 / 10;
+  font-size: 15px;
+  color: gray;
+  line-height: 50px;
+  border-bottom: 2px dashed white;
+}
+.profile {
+  display: grid;
+  font-size: 500%;
+}
+.nav-1 {
+  display: grid;
+  place-items: center;
+  grid-column: 5 / 6;
+  grid-row: 3 / 5;
+}
+.nav-2 {
+  display: grid;
+  place-items: center;
+  grid-column: 5 / 6;
+  grid-row: 5 / 6;
+  font-weight: 900;
+}
+.nav-3 {
+  display: grid;
+  place-items: center;
+  grid-column: 5 / 6;
+  grid-row: 6 / 7;
+  font-weight: 900;
+}
+.nav-4 {
+  display: grid;
+  place-items: center;
+  grid-column: 5 / 6;
+  grid-row: 7 / 8;
+  font-weight: 900;
+}
+.aside-1 {
+  display: grid;
+  place-items: center;
+  grid-column: 1;
+  grid-row: 3 / 5;
+}
+.aside-2 {
+  display: grid;
+  place-items: center;
+  grid-column: 1;
+  grid-row: 5 / 6;
+  font-weight: 900;
+}
+.aside-3 {
+  display: grid;
+  place-items: center;
+  grid-column: 1;
+  grid-row: 6 / 7;
+  font-weight: 900;
+}
+.aside-4 {
+  display: grid;
+  place-items: center;
+  grid-column: 1;
+  grid-row: 7 / 8;
+  font-weight: 900;
+}
+.aside-1,
+.nav-1 {
+  font-weight: 900;
+  font-size: 30px;
+  color: navy;
+  border-bottom: 2px dashed white;
+}
+.aside-2,
+.aside-3,
+.aside-4,
+.nav-2,
+.nav-3,
+.nav-4 {
+  font-size: 25px;
+  font-weight: 900;
+  color:navy;
+}
+.footer-1 {
+  display: grid;
+  grid-column: 1/6;
+  grid-row: 10;
+  border-top: 2px dashed white;
+  color: white;
+  font-weight: 900;
+}
+.footer-2 {
+  display: grid;
+  grid-column: 2/5;
+  grid-row: 11;
+  color: gray;
+}
+.img {
+  padding: 5px;
+  width: 320px;
+  height: 400px;
+}
+fieldset {
+  border-color: white;
+  border-radius: 100%;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+}
+a:hover {
+  color: white;
+}
