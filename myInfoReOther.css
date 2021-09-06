@@ -13,8 +13,8 @@ body {
   grid-row: 1;
   font-size: 50px;
   font-weight: 900;
-  color: navy;
-  border-bottom: 2px dashed white;
+  color: silver;
+  border-bottom: 2px dashed silver;
 }
 .header-2 {
   display: grid;
@@ -23,8 +23,8 @@ body {
   place-items: center;
   font-size: 25px;
   font-weight: 900;
-  color: navy;
-  border-bottom: 2px dashed white;
+  color: silver;
+  border-bottom: 2px dashed silver;
 }
 .main-1 {
   display: grid;
@@ -105,8 +105,8 @@ body {
 .nav-1 {
   font-weight: 900;
   font-size: 30px;
-  color: navy;
-  border: 2px dashed white;
+  color: silver;
+  border: 2px dashed silver;
 }
 .aside-2,
 .aside-3,
@@ -116,16 +116,16 @@ body {
 .nav-4 {
   font-size: 25px;
   font-weight: 900;
-  color:navy;
-  border-left: 2px dashed white;
-  border-right: 2px dashed white;
+  color: silver;
+  border-left: 2px dashed silver;
+  border-right: 2px dashed silver;
 }
 .footer-1 {
   display: grid;
   grid-column: 1/7;
   grid-row: 12;
-  border-top: 2px dashed white;
-  color: white;
+  border-top: 2px dashed silver;
+  color: silver;
   font-weight: 900;
 }
 .footer-2 {
@@ -140,7 +140,7 @@ body {
   height: 400px;
 }
 fieldset {
-  border-color: white;
+  border-color: silver;
   border-radius: 100%;
 }
 a {
@@ -150,5 +150,5 @@ a {
   font-size: 18px;
 }
 a:hover {
-  color: white;
+  color: silver;
 }
