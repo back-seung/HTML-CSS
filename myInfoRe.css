@@ -8,6 +8,13 @@ body {
   grid-auto-rows: minmax(100px, auto);
   gap: 10px;
 }
+.clock {
+  color: gray;
+}
+#weather {
+  color: gray;
+}
+
 .header-1 {
   display: grid;
   grid-column: 1 / 6;
