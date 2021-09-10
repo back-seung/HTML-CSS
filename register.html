@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../CSS/styleOther.css">
+</head>
+
+<body>
+	<h1>회원가입 정보 입력</h1>
+  <form class="frm" action="index.html">
+  	<div class="register">
+	    <div>이름</div>
+  	  <div><input type="text" class="name"></div>
+			<div>주민등록번호</div>
+			<div><input type="text" class="firstJumin"> - <input type="text" class="lastJumin"></div>
+    	<div>ID</div>
+    	<div><input type="text" class="id"></div>
+	    <div>PW</div>
+      <div><input type="text" class="firstPw"></div>
+      <div>PW 확인</div>
+			<div><input type="text" class="secPw"></div>				
+      <div>E-MAIL</div>
+      <div><input type="text" class="email"></div>
+			<br/>
+			<div><input type="button" value="회원가입" onclick="inputCheck()"></div>
+    </div>
+  </form>
+
+  <script>
+    const frm = document.querySelector(".frm");
+		const name = frm.querySelector(".name");
+		const firstJumin = frm.querySelector(".firstJumin");
+		const lastJumin = frm.querySelector(".lastJumin");
+		const id = frm.querySelector(".id");
+    const firstPw = frm.querySelector(".firstPw");
+    const secPw = frm.querySelector(".secPw");
+		const email = frm.querySelector(".email");
+
+    function inputCheck() {
+			if(!name.value){ //이름 빈 값 확인
+				alert("이름을 입력해주세요");
+				name.focus();
+				return false;
+			}
+			if(!firstJumin.value || !lastJumin.value) { //주민등록번호 빈 값 확인 
+				alert("주민번호를 입력해주세요");
+				firstJumin.focus();
+				return false;
+			} else if(!(firstJumin.value.length == 6 && lastJumin.value.length == 7)) { // 주민등록번호 길이 확인
+				alert("올바른 주민등록번호를 입력해주세요! 예) 980521-1234567");
+				firstJumin.value = '';
+				lastJumin.value = '';
+				return false;
+			}			
+			if(!id.value) { //ID 빈 값 확인
+				alert("ID를 입력해주세요");
+				id.focus();
+				return false;
+			}
+			if (!firstPw.value || !secPw.value) { //비밀번호 빈 값 확인
+				alert("비밀번호를 입력해주세요!");
+				firstPw.focus();
+				return false;
+			}else if (firstPw.value !== secPw.value) { // PW / PW 확인 값 맞는지 확인
+				alert("비밀번호가 서로 다릅니다. 다시 입력해주세요!");
+				secPw.value = '';
+				return false;
+      }
+			if(!email.value){ // E-mail 빈 값 확인
+				alert("이메일을 입력해주세요!");
+				email.focus();
+				return false;
+			}
+			// 모든 값이 조건에 충족할 때
+    	alert(name.value + "님 회원가입을 축하합니다.");
+    	frm.submit();            
+			return true;
+    }
+    </script>
+</body>
+
+</html>
